@@ -1,14 +1,13 @@
 /* eslint-disable no-undef */
 
 import { RemoteAuthentication } from './remote-authentication'
-import { HttpClientSpy } from '@/data/test/moke-http-client'
-import { mockAuhtentication, mockAccountModel } from '@/domain/test/mock-account'
+import { HttpClientSpy } from '@/data/test'
+import { HttpStatusCode } from '@/data/protocols/http'
+import { mockAuhtentication, mockAccountModel } from '@/domain/test'
 import faker from 'faker'
-import { InvalidCredentialsError } from '@/domain/errors/invalid-credentials-error'
-import { HttpStatusCode } from '@/data/protocols/http/httpResponse'
-import { UnexpectedError } from '@/domain/errors/unexpected-error'
-import { AuthenticationParams } from '@/domain/usecases/authentication'
-import { AccountModel } from '@/domain/models/account-model'
+import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors'
+import { AuthenticationParams } from '@/domain/usecases'
+import { AccountModel } from '@/domain/models'
 
 type SutTypes = {
   sut: RemoteAuthentication,
