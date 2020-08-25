@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 
 import { RemoteAuthentication } from './remote-authentication'
-import { HttpClientSpy } from '../../test/moke-http-client'
-import { mockAuhtentication } from '../../../domain/test/mock-authentication'
+import { HttpClientSpy } from '@/data/test/moke-http-client'
+import { mockAuhtentication } from '@/domain/test/mock-authentication'
 import faker from 'faker'
 
 type SutTypes = {
